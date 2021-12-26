@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Astrom</title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/nasa.jpg">
+    <meta charset="utf-8">
+    <meta name="keywords" content="espacio, simulador, space simulator, universo, planetas, sistema solar">
+    <meta name="description" content="Astrom es una aplicación web interactiva sobre astronomía que busca una inmersión del usuario en el espacio a través de su simulación"> 
+    <meta name="robots" content="index">   
+    <meta name="author" content="DaCel">
+  </head>
+  <body>
+    <header>
+      <span>
+        <h1 style="width: 200px;">Astrom</h1>
+        <input type="text">
+      </span>
+    </header>  
+    <nav>
+
+    </nav> 
+    <main>
+      <div>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/kN1XP-Bef7w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      
+      <div>
+        <form action="/formulario" method="POST">
+          <label for="user">Usuario</label>
+          <input type="text" name="user" id="user" placeholder="Ej: Daniel" required>
+          <label for="password">Constraseña</label>
+          <input type="password" name="password" id=password required> 
+          <label for="comment">Comentario</label>
+          <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Ingrese comentario"></textarea>
+          <label for="profileimg">Imágen de perfil</label>
+          <input type="file" name="profileimg" id="profileimg" accept=".jpg,.png,.svg,.gif">
+          <label for="paises">País</label>
+          <select name="paises" id="paises">
+            <option value="">Seleccione un país</option>
+            <option value="1">Colombia</option>
+            <option value="2">México</option>
+            <option value="3">Chile</option>
+          </select>
+
+          <!--Botones de Radio-->
+          <p>Lenguaje de programación preferido:</p>
+          <label for="c"><input type="radio" name="lenguajes-programacion" id="c">C</label>
+          <label for="c++"><input type="radio" name="lenguajes-programacion" id="c++">C++</label>
+          <label for="java"><input type="radio" name="lenguajes-programacion" id="java">Java</label>
+          <label for="python"><input type="radio" name="lenguajes-programacion" id="python">Python</label>         
+          <label for="otro"><input type="radio" name="lenguajes-programacion" id="otro">Otro</label>
+          <label for="lenguaje">¿Cuál?
+          <input type="text" name="lenguaje" id="lenguaje" placeholder="Ej: C#"></label>
+          
+          <!--Casillas de verificación-->
+          <p>Leenguajes dominados:</p>
+          <label for="c2"><input type="checkbox" name="habilidades" id="c2">C</label>
+          <label for="c++2"><input type="checkbox" name="habilidades" id="c++2">C++</label>
+          <label for="java2"><input type="checkbox" name="habilidades" id="java2">Java</label>
+          <label for="python2"><input type="checkbox" name="habilidades" id="python2">Python</label> 
+          
+          <input type="submit">
+        </form>
+        <p>Para los amantes del cosmos</p>
+        <p>Ahora tu dispositivo será tu nave espacial</p>
+        <p>Conoce más sobre el espacio haciendo <a href="https://www.astrobitacora.com/el-futuro-del-ser-humano/" target="_blank" rel="noopener noreferrer">cick aquí</a></p>
+  
+        <a href="#sagan">Carl Sagan</a>
+        <a href="#neil">Neil deGrasse</a>
+  
+        <br>
+        
+        <h3>Vía Lactea</h3>
+        <img src="https://www.astrobitacora.com/wp-content/uploads/2017/09/milky-way.jpg?resolution=1366,1" alt="vía láctea" width="290px">
+        <video src="https://youtu.be/TKyVZTQgGw8"></video>
+        <p><b>Sistema solar:</b></p>
+        <ol>
+          <li>Mercurio</li>
+          <li>Venus</li>
+          <li>Tierra</li>
+          <li>Marte</li>
+          <li>Júpiter</li>
+          <li>Saturno</li>
+          <li>Urano</li>
+          <li>Neptuno</li>
+          <li><strike>Plutón</strike></li>
+        </ol>
+        <a href="https://www.nasa.gov/" target="_blank" rel="noopner noreferrer"><img src="images/nasa.jpg" alt="NASA" width="200px"></a>
+      </div>
+
+      <hr>
+
+      <div>
+        <h3 id="sagan">Carl Sagan</h3>
+
+        <p>(Nueva York, 1934-Seattle, EE UU, 1996) Astrónomo estadounidense. Cursó estudios en la Universidad de Chicago, donde se doctoró en astronomía y astrofísica en 1960. Posteriormente fue profesor de la Universidad de Berkeley, de la Universidad de Harvard y, a partir de 1968, de la Cornell University. En 1970 fue nombrado director del Centro de Estudios Planetarios. Colaborador habitual de la NASA, ideó los mensajes radiotelegráficos enviados por las sondas Pioneer 10 y 11 al espacio exterior para contactar con posibles civilizaciones extraterrestres. Contrario a la proliferación del arsenal nuclear, de cuyos peligros advirtió, fue un prolífico escritor de ciencia ficción, y en 1978 fue galardonado con el Premio Pulitzer por su obra Los dragones del Edén: especulaciones sobre la evolución de la inteligencia humana, si bien adquirió fama y popularidad por su obra Cosmos, que en 1980 fue convertida en serie televisiva y constituyó un éxito mundial.</p>
+
+        <h3 id="neil">Neil deGrasse Tyson</h3>
+        <img src="images/cosmos.jfif" alt="Cosmos">
+        <p>(Nueva York, 5 de octubre de 1958) es un astrofísico, escritor y divulgador científico estadounidense. Actualmente es director del Planetario Hayden en el Centro Rose para la Tierra y el Espacio, investigador asociado en el Departamento de Astrofísica del Museo Americano de Historia Natural. Desde el año 2006 es el presentador del programa de televisión de corte educativo científico NOVA ScienceNOW del canal público de Boston WGBH, miembro de PBS, y que ha sido un invitado frecuente en The Daily Show, The Colbert Report, Real Time with Bill Maher y Jeopardy!.</p>
+      </div>
+    </main>
+    <footer>
+      <p><small>©DaCel - <a href="https://github.com/DanielFelipeCastellanos" target="_blank" rel="noopener noreferrer">GitHub</a></small></p>
+    </footer>
+  </body>
+</html> 
+
